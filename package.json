@@ -24,6 +24,7 @@
     "gulp-clean-css": "^4.3.0",
     "gulp-sass": "^5.1.0",
     "gulp-typescript": "6.0.0-alpha.1",
+    "lib-ui": "workspace:^",
     "sass": "^1.69.5",
     "sucrase": "^3.34.0",
     "typescript": "^5.2.2",
