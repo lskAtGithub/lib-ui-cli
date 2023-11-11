@@ -1,0 +1,20 @@
+{
+  "Vue base layout": {
+    "scope": "vue",
+    "prefix": "vbl",
+    "body": [
+			"<template>",
+			"",
+			"</template>"
+			"",
+			"<script lang=\"ts\" setup>",
+			"",
+			"defineOptions({",
+			"  name: ''",
+			"})",
+			"</script>",
+			""
+		],
+    "description": "vue file base layout"
+  }
+}
