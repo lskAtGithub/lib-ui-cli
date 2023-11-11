@@ -7,6 +7,16 @@ settings:
 importers:
 
   .:
+    dependencies:
+      '@lib-ui/components':
+        specifier: workspace:^
+        version: link:packages/components
+      '@lib-ui/theme-chalk':
+        specifier: workspace:^
+        version: link:packages/theme-chalk
+      '@lib-ui/utils':
+        specifier: workspace:^
+        version: link:packages/utils
     devDependencies:
       '@types/gulp':
         specifier: ^4.0.17
@@ -59,6 +69,12 @@ importers:
       vue:
         specifier: ^3.2.36
         version: 3.2.36
+
+  packages/components: {}
+
+  packages/theme-chalk: {}
+
+  packages/utils: {}
 
   play:
     devDependencies:
