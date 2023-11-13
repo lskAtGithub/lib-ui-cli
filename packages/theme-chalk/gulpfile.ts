@@ -8,7 +8,7 @@ import path from 'path'
 function compile() {
   const sass = gulpSass(dartSass)
   return src(path.resolve(__dirname, './src/*.scss'))
-    .pipe(sass.sync())
+    .pipe(sass.sync().on('error', sass.logError))
     .pipe(autoprefixer())
     .pipe(cleanCss())
     .pipe(dest(path.resolve(__dirname, './dist/css')))
