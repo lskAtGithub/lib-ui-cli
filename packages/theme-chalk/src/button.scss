@@ -1,0 +1,66 @@
+@use './mixins/mixins.scss' as *;
+
+$button-type: ('primary', 'info', 'warning', 'danger', '');
+
+@include b(button) {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  height: map-get($map: $size-height, $key: '');
+  box-sizing: border-box;
+  background: transparent;
+  transition: 0.3s ease;
+  transform-origin: left;
+  user-select: none;
+  padding: 0 12px;
+  vertical-align: middle;
+  border-width: $border-width;
+  border-style: $border-style;
+  border-color: map-get($map: $border-color, $key: '');
+  border-radius: map-get($map: $border-radius, $key: base);
+  outline: none;
+  cursor: pointer;
+
+  @include e(text) {
+    z-index: 1;
+  }
+
+  &:not([class*='button--']) {
+    &:hover {
+      color: $color-primary;
+      border-color: $color-primary;
+    }
+  }
+
+  @each $i in $button-type {
+    @include m($i) {
+      color: #ffffff;
+      background-color: map-get($colors, $i, 'base');
+      &:hover {
+        background-color: map-get($colors, $i, 'light-3');
+      }
+
+      @include when(active) {
+        &::after {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          z-index: 0;
+          background: map-get($colors, $i, 'base');
+          transform: scaleX(0);
+          transform-origin: left;
+          animation: button-transform 300ms ease;
+        }
+      }
+    }
+  }
+}
+
+@keyframes button-transform {
+  100% {
+    transform: scaleX(1);
+  }
+}
