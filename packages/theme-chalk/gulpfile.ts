@@ -4,9 +4,10 @@ import dartSass from 'sass'
 import autoprefixer from 'gulp-autoprefixer'
 import cleanCss from 'gulp-clean-css'
 import path from 'path'
+
 function compile() {
   const sass = gulpSass(dartSass)
-  return src(path.resolve(__dirname, './src/*.scss'))
+  return src(path.resolve(__dirname, './src/index.scss'))
     .pipe(sass.sync())
     .pipe(autoprefixer())
     .pipe(cleanCss())
