@@ -1,5 +1,5 @@
 import { spawn } from 'child_process'
-import { projectRoot } from './path'
+import { projectRoot } from './paths'
 
 export const run = async (command: string, cwd: string = projectRoot) =>
   new Promise<void>((resolve, reject) => {
