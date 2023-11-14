@@ -14,13 +14,13 @@ function compile() {
     .pipe(dest(path.resolve(__dirname, './dist/css')))
 }
 function copyFont() {
-  return src(path.resolve(__dirname, './src/fonts/'))
+  return src(path.resolve(__dirname, './src/fonts/**'))
     .pipe(cleanCss())
-    .pipe(dest('./dist/fonts'))
+    .pipe(dest('./dist/fonts/'))
 }
 function copyFullStyle() {
-  return src(path.resolve(__dirname, './dist/')).pipe(
-    dest(path.resolve(__dirname, '../../dist/theme-chalk'))
+  return src(path.resolve(__dirname, './dist/**')).pipe(
+    dest(path.resolve(__dirname, '../../dist/theme-chalk/'))
   )
 }
 
