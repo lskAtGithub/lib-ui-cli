@@ -1,0 +1,265 @@
+@use './mixins/config.scss' as *;
+
+@font-face {
+  font-family: "iconfont"; /* Project id 4328624 */
+  src: url('./fonts/iconfont.woff2?t=1699954301374') format('woff2'),
+       url('./fonts/iconfont.woff?t=1699954301374') format('woff'),
+       url('./fonts/iconfont.ttf?t=1699954301374') format('truetype');
+}
+
+[class^='#{$namespace}-icon'] {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.u-icon-star:before {
+  content: "\e663";
+}
+
+.u-icon-filled:before {
+  content: "\e664";
+}
+
+.u-icon-up:before {
+  content: "\e665";
+}
+
+.u-icon-left:before {
+  content: "\e666";
+}
+
+.u-icon-down:before {
+  content: "\e667";
+}
+
+.u-icon-right:before {
+  content: "\e668";
+}
+
+.u-icon-linkedin:before {
+  content: "\e672";
+}
+
+.u-icon-sina:before {
+  content: "\e673";
+}
+
+.u-icon-google:before {
+  content: "\e674";
+}
+
+.u-icon-github:before {
+  content: "\e675";
+}
+
+.u-icon-applets:before {
+  content: "\e677";
+}
+
+.u-icon-wechat:before {
+  content: "\e678";
+}
+
+.u-icon-benefits:before {
+  content: "\e67a";
+}
+
+.u-icon-alipay:before {
+  content: "\e67b";
+}
+
+.u-icon-taobao:before {
+  content: "\e67c";
+}
+
+.u-icon-loading:before {
+  content: "\e83d";
+}
+
+.u-icon-view:before {
+  content: "\e633";
+}
+
+.u-icon-view-off:before {
+  content: "\e634";
+}
+
+.u-icon-message:before {
+  content: "\e635";
+}
+
+.u-icon-message-unread:before {
+  content: "\e636";
+}
+
+.u-icon-time:before {
+  content: "\e638";
+}
+
+.u-icon-order:before {
+  content: "\e63a";
+}
+
+.u-icon-order-unread:before {
+  content: "\e63b";
+}
+
+.u-icon-cart-empty:before {
+  content: "\e63c";
+}
+
+.u-icon-cart:before {
+  content: "\e63d";
+}
+
+.u-icon-search:before {
+  content: "\e63e";
+}
+
+.u-icon-edit:before {
+  content: "\e63f";
+}
+
+.u-icon-link:before {
+  content: "\e640";
+}
+
+.u-icon-share:before {
+  content: "\e641";
+}
+
+.u-icon-setting:before {
+  content: "\e642";
+}
+
+.u-icon-upload:before {
+  content: "\e643";
+}
+
+.u-icon-download:before {
+  content: "\e644";
+}
+
+.u-icon-play:before {
+  content: "\e645";
+}
+
+.u-icon-region:before {
+  content: "\e646";
+}
+
+.u-icon-discount:before {
+  content: "\e647";
+}
+
+.u-icon-notification:before {
+  content: "\e648";
+}
+
+.u-icon-notification-off:before {
+  content: "\e649";
+}
+
+.u-icon-lock:before {
+  content: "\e64a";
+}
+
+.u-icon-unlock:before {
+  content: "\e64b";
+}
+
+.u-icon-filter:before {
+  content: "\e64c";
+}
+
+.u-icon-image:before {
+  content: "\e64d";
+}
+
+.u-icon-email:before {
+  content: "\e64e";
+}
+
+.u-icon-copy:before {
+  content: "\e64f";
+}
+
+.u-icon-user:before {
+  content: "\e650";
+}
+
+.u-icon-customer-service:before {
+  content: "\e651";
+}
+
+.u-icon-sub-account:before {
+  content: "\e652";
+}
+
+.u-icon-list:before {
+  content: "\e653";
+}
+
+.u-icon-refresh:before {
+  content: "\e654";
+}
+
+.u-icon-close-filled:before {
+  content: "\e655";
+}
+
+.u-icon-check:before {
+  content: "\e656";
+}
+
+.u-icon-close:before {
+  content: "\e657";
+}
+
+.u-icon-check-filled:before {
+  content: "\e658";
+}
+
+.u-icon-forbidden:before {
+  content: "\e659";
+}
+
+.u-icon-forbidden-filled:before {
+  content: "\e65a";
+}
+
+.u-icon-info-filled:before {
+  content: "\e65b";
+}
+
+.u-icon-info:before {
+  content: "\e65c";
+}
+
+.u-icon-help-filled:before {
+  content: "\e65d";
+}
+
+.u-icon-help:before {
+  content: "\e65e";
+}
+
+.u-icon-caution:before {
+  content: "\e65f";
+}
+
+.u-icon-caution-filled:before {
+  content: "\e660";
+}
+
+.u-icon-like:before {
+  content: "\e661";
+}
+
+.u-icon-like-filled:before {
+  content: "\e662";
+}
+
