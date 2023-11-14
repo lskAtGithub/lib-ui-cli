@@ -4,6 +4,7 @@ import dartSass from 'sass'
 import autoprefixer from 'gulp-autoprefixer'
 import cleanCss from 'gulp-clean-css'
 import path from 'path'
+import iconfont from 'gulp-iconfont'
 
 function compile() {
   const sass = gulpSass(dartSass)
@@ -14,7 +15,9 @@ function compile() {
     .pipe(dest(path.resolve(__dirname, './dist/css')))
 }
 function copyFont() {
-  return src(path.resolve(__dirname, './src/fonts/**')).pipe(
+  return src(path.resolve(__dirname, './src/fonts/**'))
+  .pipe(iconfont({ fontName: 'iconfont' }))
+  .pipe(
     dest('./dist/css/fonts')
   )
 }
