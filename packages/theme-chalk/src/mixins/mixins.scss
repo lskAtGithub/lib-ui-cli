@@ -2,6 +2,7 @@
 @use '../common/var.scss' as *;
 
 @forward '../common/var.scss';
+@forward '../mixins/config.scss';
 
 // BEM
 @mixin b($block) {
