@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "dev": "pnpm -C play dev",
-    "build": "gulp -f build/gulpfile.ts"
+    "build": "gulp -f build/gulpfile.ts",
+    "clean-pack-file": "gulp",
+    "build-clean": "gulp -f build/gulpfile.ts && gulp"
+
   },
   "workspaces": [
     "packages/*"
