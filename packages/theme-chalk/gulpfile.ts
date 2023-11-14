@@ -16,14 +16,12 @@ function compile() {
 }
 function copyFont() {
   return src(path.resolve(__dirname, './src/fonts/**'))
-  .pipe(iconfont({ fontName: 'iconfont' }))
-  .pipe(
-    dest('./dist/css/fonts')
-  )
+    .pipe(iconfont({ fontName: 'iconfont' }))
+    .pipe(dest('./dist/css/fonts'))
 }
 function copyFullStyle() {
   return src(path.resolve(__dirname, './dist/**')).pipe(
-    dest(path.resolve(__dirname, '../../dist/theme-chalk/'))
+    dest(path.resolve(__dirname, '../../dist/lib-ui/theme-chalk/'))
   )
 }
 
