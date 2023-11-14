@@ -1,11 +1,14 @@
 <template>
   <div class="container">
     <u-demo msg="测试组件"></u-demo>
-  <u-button type="" @click="handleClick">按钮</u-button>
-  <u-button type="primary" @click="handleClick">按钮</u-button>
-  <u-button type="info" @click="handleClick">按钮</u-button>
-  <u-button type="danger" @click="handleClick">按钮</u-button>
-  <u-button type="warning" @click="handleClick">按钮</u-button>
+    <p>
+      <u-icon name="left"></u-icon>
+    </p>
+    <u-button type="" @click="handleClick">按钮</u-button>
+    <u-button type="primary" @click="handleClick">按钮</u-button>
+    <u-button type="info" @click="handleClick">按钮</u-button>
+    <u-button type="danger" @click="handleClick">按钮</u-button>
+    <u-button type="warning" @click="handleClick">按钮</u-button>
   </div>
 </template>
 
