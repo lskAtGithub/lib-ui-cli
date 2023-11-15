@@ -12,12 +12,12 @@ function compile() {
     .pipe(sass.sync().on('error', sass.logError))
     .pipe(autoprefixer())
     .pipe(cleanCss())
-    .pipe(dest(path.resolve(__dirname, './dist/css')))
+    .pipe(dest(path.resolve(__dirname, './dist')))
 }
 function copyFont() {
   return src(path.resolve(__dirname, './src/fonts/**'))
     .pipe(iconfont({ fontName: 'iconfont' }))
-    .pipe(dest('./dist/css/fonts'))
+    .pipe(dest('./dist/fonts'))
 }
 function copyFullStyle() {
   return src(path.resolve(__dirname, './dist/**')).pipe(
