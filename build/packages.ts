@@ -25,7 +25,7 @@ export const buildPackages = (dirname: string, name: string) => {
       }),
       withTaskName(`copy${dirname}`, () => {
         return src(`${output}/**`).pipe(
-          dest(path.resolve(outDir, config.output.name, name))
+          dest(path.resolve(outDir, './lib-ui', config.output.name, name))
         )
       })
     )
