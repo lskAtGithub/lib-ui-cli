@@ -5,6 +5,7 @@ import clean from 'gulp-clean'
 import { withTaskName } from './build/utils'
 import { projectRoot } from './build/utils/paths'
 
+// todo 未打包组件和生成对应 ts 声明文件
 function removeSoundCodePackFile() {
   return src(
     [
